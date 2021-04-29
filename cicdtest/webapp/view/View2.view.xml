@@ -1,0 +1,12 @@
+<mvc:View controllerName="com.yash.cicdtest.controller.View2" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	
+		<App >
+			<pages>
+				<Page id="page2" title="Page 2">
+					<content>
+                        <Text text="View2"></Text>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+</mvc:View>

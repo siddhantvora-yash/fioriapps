@@ -2,7 +2,8 @@
 
 	sap.ui.define([
 		"sap/ui/test/opaQunit",
-		"./pages/View1"
+        "./pages/View1",
+        "./pages/View2"
 	], function (opaTest) {
 		"use strict";
 
@@ -10,12 +11,19 @@
 
 		opaTest("Should see the initial page of the app", function (Given, When, Then) {
 			// Arrangements
-			Given.iStartMyApp();
-
+            Given.iStartMyApp();
+            
+            
 			// Assertions
-			Then.onTheAppPage.iShouldSeeTheApp();
-
+            Then.onTheAppPage.iShouldSeeTheApp();
+            When.onTheAppPage.iPressOnTheButton();
+            Then.onTheSecondPage.iShouldSeeTheSecondpage();
+            //action
+            
 			//Cleanup
 			Then.iTeardownMyApp();
-		});
+        });
+        // opaTest("Should see 2nd page ",function(Given,When,Then){
+
+        //  });
 	});

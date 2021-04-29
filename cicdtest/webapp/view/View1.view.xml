@@ -6,6 +6,12 @@
 					<content>
                         <Text text="Hello World"></Text>
                     </content>
+                    <footer>
+                    <Toolbar >
+                    <ToolbarSpacer ></ToolbarSpacer>
+                    <Button id="btn1" text="next" press="onNext"></Button>
+                    </Toolbar>
+                    </footer>
 				</Page>
 			</pages>
 		</App>

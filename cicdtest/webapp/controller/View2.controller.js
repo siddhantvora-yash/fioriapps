@@ -10,10 +10,6 @@ sap.ui.define([
 		return Controller.extend("com.yash.cicdtest.controller.View1", {
 			onInit: function () {
 
-            },
-            onNext:function(){
-                 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-                oRouter.navTo("View2");
             }
 		});
 	});
